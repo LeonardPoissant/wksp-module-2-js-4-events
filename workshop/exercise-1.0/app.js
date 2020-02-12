@@ -1,3 +1,15 @@
+
+
+
+
+function handleMouseDown (event){
+        let appear = document.createElement('h1')
+appear.innerText = 'HOLD DOOOOOOR';
+document.getElementById('main').appendChild(appear);
+    }
+
+document.addEventListener('mousedown', handleMouseDown);
+
 // Exercise 1.0
 // ------------
 // Write an app that registers a click anywhere on the screen.

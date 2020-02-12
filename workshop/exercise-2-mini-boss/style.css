@@ -1,0 +1,60 @@
+
+body{
+    margin:0;
+}
+  
+  #clock {
+    background-color: #121212;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #66ff99;
+    font-size: 56px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width:100vw;
+  }
+
+#timer{
+    display:flex;
+    flex-direction: column;
+    background-color: brown;
+    color: teal;
+    font-size: 70px;
+    justify-content: center;
+    text-align:center;
+    padding-top: 40px;
+    padding-bottom: 40px ;
+}
+.button1{
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 70px;
+    border-radius: 60px;
+    box-shadow: 0 0 10px #ddd;
+    outline: none ;
+}
+
+.stopWatch{
+display: flex;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+padding: 120px;
+background-color: rgb(240, 240, 15);
+
+
+}
+
+#seconds{
+  color: #121212;
+  height: 60px;
+}
+
+.button2{
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    box-shadow: 0 0 10px #ddd;
+}

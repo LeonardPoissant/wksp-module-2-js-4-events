@@ -1,8 +1,8 @@
 const body = document.querySelector('body');
-const startButton = document.getElementById('start-button');
+const startButton = document.getElementById('starter');
 const timer = document.getElementById('timer');
-const gameBoard = document.getElementById('game-board');
-const notification = document.getElementById('notification');
+const main = document.getElementById('main');
+const alert = document.getElementById('alert');
 
 const NUM_BUTTONS = Math.floor(Math.random() * 10) + 1;
 const GAME_TIME = 5000; // in miliseconds
@@ -17,14 +17,14 @@ function checkArray(arr) {
 
 function endGame() {
     // to win the game ALL buttons must be green
-    notification.style.height = '200px';
-    notification.style.paddingTop = '74px';
+    alert.style.height = '200px';
+    alert.style.paddingTop = '74px';
     if (checkArray(clickedState)) {
-        notification.innerText = "You Win!!!!";
-        notification.style.background = 'green';
+        alert.innerText = "You fast Boi!!!";
+        alert.style.background = 'green';
     } else {
-        notification.innerText = "You Lose...";
-        notification.style.background = 'red';
+        alert.innerText = "Too slow...";
+        alert.style.background = 'red';
     }
 
     // clear all of the setIntervals
@@ -67,7 +67,7 @@ function startGame() {
         button.style.top = `${Math.random() * 575}px`;
         button.style.left = `${Math.random() * 775}px`;
         
-        gameBoard.appendChild(button);
+        main.appendChild(button);
 
         clickedState.push(false);
     

@@ -99,7 +99,18 @@ All DOM nodes have methods we can use to _notify_ us of an event.
 
 ```js
 // Example
+const button = document.getElementById('btn')
 
+    function handleBouyaa= function(){
+        console.log('bouyaa');
+    }
+    
+}
+
+button.addEventListener('click', handleBouyaa); //REQUIRES TWO ARGUMENTS
+button.removeEnventListener('click', handleBouyaa);
+
+<button id='btn'></button>
 ```
 
 ---
